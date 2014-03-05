@@ -1,0 +1,13 @@
+---
+- name: Add PPA for PHP 5.4
+  apt_repository: repo=ppa:ondrej/php5-oldstable
+ 
+- name: Update apt cache
+  apt: update_cache=yes
+ 
+- name: Install PHP
+  apt: pkg=php5
+
+- name: Install php5-sqlite
+  apt: pkg=php5-sqlite
+
