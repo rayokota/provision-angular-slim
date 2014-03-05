@@ -11,3 +11,5 @@
 - name: Install php5-sqlite
   apt: pkg=php5-sqlite
 
+- name: Install curl (for Composer)
+  apt: pkg=curl
